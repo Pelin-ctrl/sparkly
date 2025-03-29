@@ -1,0 +1,12 @@
+@import "reset.css";
+@import "content.css";
+@import "animation.css";
+@import "responsive.css";
+@font-face {
+    font-family: "Sunday" ;
+    src: url("../fonts/SundayRegular.woff") format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+

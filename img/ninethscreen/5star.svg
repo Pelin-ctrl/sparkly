@@ -1,0 +1,13 @@
+<svg width="548" height="372" viewBox="0 0 548 372" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M272.5 49L283.613 81.8217H319.577L290.482 102.107L301.595 134.928L272.5 114.643L243.405 134.928L254.518 102.107L225.423 81.8217H261.387L272.5 49Z" fill="#ECC10F"/>
+<g filter="url(#filter0_f_530_359)">
+<ellipse cx="274.055" cy="97.4529" rx="70.8129" ry="67.1264" transform="rotate(49.3699 274.055 97.4529)" fill="#D9B935"/>
+</g>
+<defs>
+<filter id="filter0_f_530_359" x="0.341309" y="-176.823" width="547.428" height="548.552" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="102.5" result="effect1_foregroundBlur_530_359"/>
+</filter>
+</defs>
+</svg>

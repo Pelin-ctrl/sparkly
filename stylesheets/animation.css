@@ -1,0 +1,39 @@
+.mainscreen {
+    display: flex; /* Главный экран показывается */
+}
+
+.fourthscreen {
+    display: none; /* Четвертый экран скрыт по умолчанию */
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0.5; /* Звезды полупрозрачные */
+    }
+    80% {
+        opacity: 4; /* Звезды становятся полностью видимыми */
+    }
+}
+/* Определяем анимацию для зайцев */
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* Начальная позиция */
+    }
+    50% {
+        transform: translateY(-20px); /* Подниматься вверх */
+    }
+    100% {
+        transform: translateY(0); /* Возвращаемся в исходное положение */
+    }
+}
+
+/* Применяем анимацию к изображениям зайцев */
+.druggable1 img {
+    position: relative;
+    animation: moveUpDown 2s infinite; /* Делаем анимацию непрерывной */
+}
+
+/* Класс для скрытия изображения зайца */
+.hidden {
+    visibility: hidden;
+}

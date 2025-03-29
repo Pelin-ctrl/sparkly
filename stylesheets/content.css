@@ -1,0 +1,2099 @@
+/* Общие стили для всей страницы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #292A47;  /* Темный фон */
+    color: white;
+    height: 100vh; /* Полная высота окна */
+    transition: all 1s ease;
+    overflow-y: scroll;
+    cursor: default;
+   
+
+}
+
+
+/* Стили для главного экрана */
+
+.mainscreen {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Экран занимает всю высоту */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Контейнер с содержимым экрана */
+.mainscreen-content {
+    z-index: 1; /* Поверх декоративных элементов */
+}
+
+/* Заголовок */
+.maintitle {
+    position: absolute;
+    top: 8.7%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрируем элемент */
+    white-space: nowrap;  
+    font-family: "Sunday";
+    font-size: 3.8rem;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    line-height: 1.2;  /* Межстрочное расстояние */
+}
+
+/* Декоративный элемент */
+.decor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0; /* За текстом и кнопками */
+    display: flex;
+    justify-content: center;
+  
+}
+
+
+
+.decor img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card1{
+    position: absolute;
+    bottom: 10vw;
+    left: 0;
+    right: 60vw;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+.card1 img{
+    max-width: 24vw;
+    height: auto;
+
+}
+.card2{
+    position: absolute;
+    bottom: 10vw;
+    left: 1vw;
+    right: 0vw;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+.card2 img{
+    max-width: 24vw;
+    height: auto;
+}
+.card3{
+    position: absolute;
+    bottom: 10vw;
+    left: 60vw;
+    right: 0vw;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+.card3 img{
+    max-width: 24vw;
+    height: auto;
+}
+.cardsshadow{
+    position: absolute;
+    bottom: 0vw;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.cardsshadow img{
+    width: 120vw;
+}
+
+
+
+
+/* ВТОРОЙ ЭКРАН */
+.secondscreen {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Экран занимает всю высоту */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    display: none;
+}
+
+.changer{
+    width: 100%;
+    height: auto;
+}
+.changer img{
+    position: absolute;
+    width: 5.5vw;
+    bottom: 1vw;
+    z-index: 4;
+    left: 91vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+}
+.questionhide img{
+    position: absolute;
+    width: 80vw;
+    bottom: 9.1vw;
+    z-index: 12;
+    left: 10vw;
+    object-fit: cover;
+    display: none;
+    overflow:visible;
+    
+}
+
+.question img{
+    position: absolute;
+    width: 7vw;
+    bottom: 1.1vw;
+    z-index: 8;
+    left: 2.5vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+}
+.chastle{
+    width: 100%;
+    height: auto;
+}
+
+.chastle img{
+    position: absolute;
+    width: 55vw;
+    bottom: 14.8vw;
+    z-index: 0;
+    left: 19.5vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+}
+
+.floor {
+    width: 100%;
+    height: auto;
+}
+
+.floor img {
+    position: absolute;
+    width: 100%;
+    bottom: 0vw;
+    z-index: 1;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+}
+
+#rabbitonfloor{
+    position: absolute;
+    width: 7vw;
+    left: 45vw;
+    z-index: 1;
+    bottom: 9vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+}
+.bushes{
+    width: 100%;
+    height: auto;
+}
+.bushes img{
+    position: absolute;
+    width: 78%;
+    z-index: 3;
+    bottom: 0vw;
+    left: 9vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+
+}
+.bushesup {
+    width: 100%;
+    height: auto;
+}
+.bushesup img{
+    position: absolute;
+    width: 96%;
+    z-index: 1;
+    bottom: 5vw;
+    left: 1.3vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+
+}
+
+#rabbitonbushesleft{
+    position: absolute;
+    width: 7vw;
+    left: 9.3vw;
+    z-index: 2;
+    bottom: 0vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+}
+
+#rabbitonbushesright{
+    position: absolute;
+    width: 10vw;
+    left: 77.5vw;
+    z-index: 2;
+    bottom: 1.7vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+}
+
+
+#rabbitonthechastleleft{
+    position: absolute;
+    width: 9vw;
+    left: 36.9vw;
+    z-index: 0;
+    bottom: 40.7vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+}
+
+
+
+#rabbitonthechastleright{
+    position: absolute;
+    width: 5vw;
+    left: 61vw;
+    z-index: 0;
+    bottom: 24vw;
+    height: auto;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+}
+
+.busheswithrosel{
+    width: 100%;
+    height: auto;
+}
+.busheswithrosel img{
+    position: absolute;
+    width: 30vw;
+    z-index: 1;
+    bottom: 12vw;
+    left: 0vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+}
+.busheswithroser{
+    width: 100%;
+    height: auto;
+}
+.busheswithroser img{
+    position: absolute;
+    width: 30vw;
+    z-index: 1;
+    bottom: 13vw;
+    left: 71vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+}
+.busheson1{
+    width: 100%;
+    height: auto;
+}
+.busheson1 img{
+    position: absolute;
+    width: 17vw;
+    z-index: 3;
+    bottom: 11.6vw;
+    left: 77vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+}
+.busheson2{
+    width: 100%;
+    height: auto;
+}
+.busheson2 img{
+    position: absolute;
+    width: 17vw;
+    z-index: 3;
+    bottom: 11.6vw;
+    left: 4vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+}
+#rabbitonbush{
+    position: absolute;
+    width: 6vw;
+    z-index: 3;
+    bottom: 22vw;
+    left: 11vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+}
+
+#rabbitonbushlefter{
+    position: absolute;
+    width: 9vw;
+    z-index: 1;
+    bottom: 20vw;
+    left: 23.6vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+}
+.treesl{
+    width: 100%;
+    height: auto;
+}
+.treesl img{
+    position: absolute;
+    width: 24vw;
+    z-index: 0;
+    bottom: 22vw;
+    left: 0vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+}
+
+.treesldown{
+    width: 100%;
+    height: auto;
+}
+.treesldown img{
+    position: absolute;
+    width: 18vw;
+    z-index: 0;
+    bottom: 23vw;
+    left: 12vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+}
+
+#rabbitoncornerl{
+    position: absolute;
+    width: 9vw;
+    z-index: 0;
+    bottom: 43vw;
+    left: 18vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+}
+#rabbitonbottomofthetree{
+    position: absolute;
+    width: 4vw;
+    z-index: 0;
+    bottom: 34vw;
+    left: 0vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;   /* Дополнительно скрывает все, что выходит за пределы контейнера */
+}
+
+#rabbitonbusheslefteron{
+    position: absolute;
+    width: 11vw;
+    z-index: 2;
+    bottom: 15vw;
+    left: 85vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+
+.treesr{
+    width: 100%;
+    height: auto;
+}
+
+.treesr img{
+    position: absolute;
+    width: 34vw;
+    z-index: 0;
+    bottom: 23vw;
+    left: 70vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+
+
+#rabbitonbushesaroundcastle{
+    position: absolute;
+    width: 6vw;
+    z-index: 0;
+    bottom: 22vw;
+    left: 74vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+
+
+
+#rabbitontreeleftunder{
+    position: absolute;
+    width: 10vw;
+    z-index:0;
+    bottom: 45vw;
+    left: 79vw;
+    height: auto;
+    object-fit:contain;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+
+.druggable1 img {
+    position: relative;
+}
+
+/* ИГРААААА 1 */
+/* Класс для исчезновения зайцев */
+
+/* Класс для исчезновения */
+.hidden {
+    transform: scale(0.1); /* Уменьшение */
+    opacity: 0;
+    pointer-events: none; /* Запрещаем клики на исчезнувших */
+}
+.draggable {
+    position: absolute; /* Должен быть absolute или fixed */
+    cursor: grab; /* Курсор в виде руки */
+    transition: transform 0.1s ease-out; /* Плавное движение */
+}
+
+.draggable:active {
+    cursor: grabbing; /* Курсор при нажатии */
+}
+
+/* ТРЕТИЙ ЭКРАН */
+.thirdscreen {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Экран занимает всю высоту */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: visible;
+    display: none;
+}
+.questioncard img{
+    position: absolute;
+    width: 80vw;
+    bottom: 9.1vw;
+    z-index: 12;
+    left: 10vw;
+    display: none;
+    overflow:visible;
+    
+}
+.caving img{
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Экран занимает всю высоту */
+    object-fit: cover; /* Чтобы изображение не искажалось */
+}
+
+#pinkruby1{
+    position: absolute;
+    width: 11vw;
+    height: 11vw; /* Экран занимает всю высоту */
+    z-index: 8;
+    left: 30vw;
+    display: flex;
+    overflow:visible;
+    object-fit: cover;
+    transform: none !important;
+}
+#pinkruby2{
+    position: absolute;
+    width: 11vw;
+    height: 11vw; /* Экран занимает всю высоту */
+    z-index: 6;
+    left: 56vw;
+    display: flex;
+    overflow: visible;
+    object-fit: cover;
+    transform: none !important;
+}
+#pinkruby3{
+    position: absolute;
+    width: 11vw;
+    height: 11vw; /* Экран занимает всю высоту */
+    max-height: 200px; /* Или подходящее значение */
+    z-index: 9;
+    left: 43vw;
+    bottom: 10vw;
+    object-fit: cover;
+    display: flex;
+    overflow: visible;
+    transform: none !important;
+}
+
+
+#pinkruby4{
+    position: absolute;
+    width: 11vw;
+    height: 11vw; /* Экран занимает всю высоту */
+    z-index: 6;
+    left: 43vw;
+    object-fit: cover;
+    bottom: 36vw;
+    display: flex;
+    overflow: visible;
+    transform: none !important;
+}
+#heart1{
+    position: absolute;
+    width: 11.5vw;
+    height: 10vw; /* Экран занимает всю высоту */
+    z-index: 6;
+    left: 56vw;
+    bottom: 10vw;
+    overflow: visible;
+    display: flex;
+}
+#heart2{
+    position: absolute;
+    width: 11.5vw;
+    height: 10vw; /* Экран занимает всю высоту */
+    z-index: 6;
+    left: 56vw;
+    bottom: 36vw;
+    display: flex;
+    overflow: visible;
+}
+#pinkheart1{
+    position: absolute;
+    width: 11.5vw;
+    height: 10vw; /* Экран занимает всю высоту */
+    z-index: 6;
+    left: 70vw;
+    bottom: 35.6vw;
+    display: flex;
+    overflow: visible;
+}
+#pinkheart2{
+    position: absolute;
+    width: 11.5vw;
+    height: 10vw; /* Экран занимает всю высоту */
+    z-index: 6;
+    left: 70vw;
+    bottom: 10vw;
+    display: flex;
+    overflow: visible;
+}
+#greenromb1 {
+    position: absolute;
+    width: 12vw;
+    height: 12vw; /* Экран занимает всю высоту */
+    z-index: 6;
+    left: 71vw;
+    bottom: 22vw;
+    object-fit: cover;
+    display: flex;
+    overflow: visible;
+}
+#greenromb2{
+    position: absolute;
+    width: 12vw;
+    height: 12vw; /* Экран занимает всю высоту */
+    z-index: 6;
+    left: 18.5vw;
+    bottom: 22vw;
+    object-fit: cover;
+    display: flex;
+    overflow: visible;
+}
+#greenromb3 {
+    position: absolute;
+    width: 12vw;
+    height: 12vw; /* Экран занимает всю высоту */
+    z-index: 6;
+    left: 31vw;
+    bottom: 9vw;
+    display: flex;
+    object-fit: cover;
+    overflow: visible;
+}
+
+#greenromb4{
+    position: absolute;
+    width: 12vw;
+    height: 12vw; /* Экран занимает всю высоту */
+    z-index: 6;
+    left: 31vw;
+    bottom: 35vw;
+    display: flex;
+    object-fit: cover;
+    overflow: visible;
+}
+#pinkchervi1{
+    position: absolute;
+    width: 10vw;
+    height: 10vw; /* Экран занимает всю высоту */
+    z-index: 6;
+    left: 18vw;
+    bottom: 36vw;
+    display: flex;
+    object-fit: cover; 
+    overflow: visible;
+}
+#pinkchervi2{
+    position: absolute;
+    width: 10vw;
+    height: 10vw; /* Экран занимает всю высоту */
+    z-index: 6;
+    left: 18vw;
+    bottom: 10.5vw;
+    display: flex;
+    object-fit: cover; 
+    overflow: visible;
+}
+
+.pinkrubyoutline img,
+.heartoutline img,
+.pinkheartoutline img,
+.pinkchervoutline img {
+    position: absolute;
+    width: 11%;
+    height: auto; /* Делаем высоту автоматической, чтобы не растягивалась */
+    z-index: 2;
+    left: 43vw;
+    bottom: 23vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0; /* По умолчанию скрываем */
+    animation: imageSwap 25s infinite; /* Анимация */
+}
+.greenromboutline img{
+    position: absolute;
+    width: 9%;
+    height: auto; /* Делаем высоту автоматической, чтобы не растягивалась */
+    z-index: 2;
+    left: 44vw;
+    bottom: 22vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0; /* По умолчанию скрываем */
+    animation: imageSwap 25s infinite; /* Анимация */
+}
+
+/* Ключевые кадры для анимации смены изображений */
+@keyframes imageSwap {
+    0% { opacity: 0; } /* Скрыто */
+    5% { opacity: 1; } /* Плавное появление */
+    20% { opacity: 1; } /* Остаётся видимым */
+    25% { opacity: 0; } /* Исчезает */
+    100% { opacity: 0; } /* Остаётся скрытым до следующего цикла */
+}
+
+/* Настройка задержки для каждой картинки */
+.pinkrubyoutline img {
+    animation-delay: 0s;
+}
+
+.heartoutline img {
+    animation-delay: 5s;
+}
+
+.pinkheartoutline img {
+    animation-delay: 10s;
+}
+
+.greenromboutline img {
+    animation-delay: 15s;
+}
+
+.pinkchervoutline img {
+    animation-delay: 20s;
+}
+
+
+
+
+
+
+
+
+.changer2{
+    width: 100%;
+    height: auto;
+}
+.changer2 img{
+    position: absolute;
+    width: 5.5vw;
+    bottom: 1vw;
+    z-index: 4;
+    left: 91vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+}
+.question2 img{
+    position: absolute;
+    width: 7vw;
+    bottom: 1.1vw;
+    z-index: 8;
+    left: 2.5vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+}
+
+
+/* игра 1 */
+
+.fourthscreen {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Экран занимает всю высоту */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    display: none;
+}
+
+
+.changer3 img{
+    position: absolute;
+    width: 5.5vw;
+    bottom: 1vw;
+    z-index: 4;
+    left: 91vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+}
+.question3 img{
+    position: absolute;
+    width: 7vw;
+    bottom: 1.1vw;
+    z-index: 8;
+    left: 2.5vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+}
+.questioneliksir img{
+    position: absolute;
+    width: 80vw;
+    bottom: 9.1vw;
+    z-index: 12;
+    left: 10vw;
+    display: none;
+    overflow:visible;
+    
+}
+.whiteballs{
+    width: 100%;
+    height: auto;
+}
+.whiteballs img{
+    position: absolute;
+    width: 13vw;
+    z-index: 2;
+    bottom: 43vw;
+    left: 17vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.whiteballs1-1 img{
+    position: absolute;
+    width: 13vw;
+    z-index: 0;
+    bottom: 43vw;
+    left: 17vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.whiteballs2{
+    width: 100%;
+    height: auto;
+}
+.whiteballs2 img{
+    position: absolute;
+    width: 13vw;
+    z-index: 2;
+    bottom: 43vw;
+    left: 42vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.whiteballs2-2 img{
+    position: absolute;
+    width: 13vw;
+    z-index: 0;
+    bottom: 43vw;
+    left: 42vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.whiteballs3{
+    width: 100%;
+    height: auto;
+}
+.whiteballs3 img{
+    position: absolute;
+    width: 13vw;
+    z-index: 2;
+    bottom: 43vw;
+    left: 66vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.whiteballs3-3 img{
+    position: absolute;
+    width: 13vw;
+    z-index: 0;
+    bottom: 43vw;
+    left: 66vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.twostrips{
+    width: 100%;
+    height: auto;
+}
+.twostrips img{
+    position: absolute;
+    width: 50vw;
+    z-index: 0;
+    bottom: -3vw;
+    left: 24vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.flowy{
+    width: 100%;
+    height: auto;
+}
+.flowy img{
+    position: absolute;
+    width: 32vw;
+    z-index: 0;
+    bottom: 45vw;
+    left: 32vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+
+.paddy{
+    width: 100%;
+    height: auto;
+}
+.paddy img{
+    position: absolute;
+    width: 8vw;
+    z-index: 0;
+    bottom: 34vw;
+    left: 3vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.cake{
+    width: 100%;
+    height: auto;
+}
+.cake img{
+    position: absolute;
+    width: 7vw;
+    z-index: 0;
+    bottom: 33vw;
+    left: 13vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.onigiri{
+    width: 100%;
+    height: auto;
+}
+.onigiri img{
+    position: absolute;
+    width: 9vw;
+    z-index: 0;
+    bottom: 22vw;
+    left: 2vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.tea{
+    width: 100%;
+    height: auto;
+}
+.tea img{
+    position: absolute;
+    width: 9vw;
+    z-index: 0;
+    bottom: 24vw;
+    left: 12vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.olivki{
+    width: 100%;
+    height: auto;
+}
+.olivki img{
+    position: absolute;
+    width: 15vw;
+    z-index: 0;
+    bottom: 9vw;
+    left: 0vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.leaf{
+    width: 100%;
+    height: auto;
+}
+.leaf img{
+    position: absolute;
+    width: 8vw;
+    z-index: 0;
+    bottom: 13vw;
+    left: 14vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.limon{
+    width: 100%;
+    height: auto;
+}
+.limon img{
+    position: absolute;
+    width: 8vw;
+    z-index: 0;
+    bottom: 0vw;
+    left: 3vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.cherry{
+    width: 100%;
+    height: auto;
+}
+.cherry img{
+    position: absolute;
+    width: 6vw;
+    z-index: 0;
+    bottom: 2vw;
+    left: 14vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+
+.eliksir{
+    width: 100%;
+    height: auto;
+}
+.eliksir img{
+    position: absolute;
+    width: 9vw;
+    z-index: 0;
+    bottom: 31vw;
+    left: 77vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.mushroom{
+    width: 100%;
+    height: auto;
+}
+.mushroom img{
+    position: absolute;
+    width: 9vw;
+    z-index: 0;
+    bottom: 19vw;
+    left: 77vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.strawberry{
+    width: 100%;
+    height: auto;
+}
+.strawberry img{
+    position: absolute;
+    width: 7.7vw;
+    z-index: 0;
+    bottom: 1vw;
+    left: 77vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.tort{
+    width: 100%;
+    height: auto;
+}
+.tort img{
+    position: absolute;
+    width: 10vw;
+    z-index: 0;
+    bottom: 30vw;
+    left: 87.7vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.ananas{
+    width: 100%;
+    height: auto;
+}
+.ananas img{
+    position: absolute;
+    width: 12vw;
+    z-index: 0;
+    bottom: 16vw;
+    left: 87vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.spoon{
+    width: 100%;
+    height: auto;
+}
+.spoon img{
+    position: absolute;
+    width: 9vw;
+    z-index: 0;
+    bottom: 2vw;
+    left: 88vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+.girl{
+    width: 100%;
+    height: auto;
+}
+.girl img{
+    position: absolute;
+    width: 21vw;
+    z-index: 0;
+    bottom: 4vw;
+    left: 40vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+.pinkflower img{
+    position: absolute;
+    width: 21vw;
+    z-index: 0;
+    bottom: 10vw;
+    z-index: 7;
+    left: 40vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+.carrot img{
+    position: absolute;
+    width: 50vw;
+    z-index: 0;
+    bottom: 0vw;
+    z-index: 5;
+    left: 25vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+.zayaz img{
+    position: absolute;
+    width: 23vw;
+    z-index: 0;
+    bottom: 4vw;
+    z-index: 2;
+    left: 39vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+.girlwithears img{
+    position: absolute;
+    width: 29vw;
+    z-index: 0;
+    bottom: 0vw;
+    z-index: 6;
+    left: 34vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+.clock img{
+    position: absolute;
+    width: 36vw;
+    z-index: 0;
+    bottom: 0vw;
+    z-index: 7;
+    left: 33vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+
+
+/* ПЯТЫЙ ЭКРАН */
+.fifhtscreen{
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Экран занимает всю высоту */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    display: none;
+}
+.changer4 img{
+    position: absolute;
+    width: 5.5vw;
+    bottom: 1vw;
+    z-index: 4;
+    left: 91vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+}
+.questionkrupa img{
+    position: absolute;
+    width: 80vw;
+    bottom: 9.1vw;
+    z-index: 12;
+    left: 10vw;
+    display: none;
+    overflow:visible;
+    
+}
+.question4 img{
+    position: absolute;
+    width: 7vw;
+    bottom: 1.1vw;
+    z-index: 8;
+    left: 2.5vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+}
+.tarelki{
+    width: 100%;
+    height: auto;
+}
+.tarelki img{
+    position: absolute;
+    width: 90vw;
+    z-index: 0;
+    bottom: 33vw;
+    left: 4.5vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+
+#erik1{
+    position: absolute;
+    width: 6vw;
+    z-index: 0;
+    bottom: 23vw;
+    left: 78vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+
+#erik2{
+    position: absolute;
+    width: 6vw;
+    z-index: 0;
+    bottom: 15vw;
+    left: 29vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+
+#erik3{
+    position: absolute;
+    width: 6vw;
+    z-index: 0;
+    bottom: 20vw;
+    left: 7vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+} 
+#erik4{
+    position: absolute;
+    width: 6vw;
+    z-index: 0;
+    bottom: 7vw;
+    left: 17vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+} 
+#erik5{
+    position: absolute;
+    width: 6vw;
+    z-index: 0;
+    bottom: 10vw;
+    left: 56vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+
+#erik6{
+    position: absolute;
+    width: 6vw;
+    z-index: 0;
+    bottom: 25vw;
+    left: 45vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+
+#kasura1{
+    position: absolute;
+    width: 9vw;
+    z-index: 0;
+    bottom: 12vw;
+    left: 38vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+#kasura2{
+    position: absolute;
+    width: 9vw;
+    z-index: 0;
+    bottom: 17vw;
+    left: 65vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+#kasura3{
+    position: absolute;
+    width: 9vw;
+    z-index: 0;
+    bottom: 8vw;
+    left: 3vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+#kasura4{
+    position: absolute;
+    width: 9vw;
+    z-index: 0;
+    bottom: 2vw;
+    left: 83vw;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+
+#kasura5{
+    position: absolute;
+    width: 9vw;
+    z-index: 0;
+    bottom: 2vw;
+    left: 43vw;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+
+#mango1{
+    position: absolute;
+    width: 7vw;
+    z-index: 0;
+    bottom: 25vw;
+    left: 20vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+#mango2{
+    position: absolute;
+    width: 7vw;
+    z-index: 0;
+    bottom: 17vw;
+    left: 50vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+#mango3{
+    position: absolute;
+    width: 7vw;
+    z-index: 0;
+    bottom: 13vw;
+    left: 87vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+#mango4{
+    position: absolute;
+    width: 7vw;
+    z-index: 0;
+    bottom: 1vw;
+    left: 63vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+
+#trubka1{
+    position: absolute;
+    width: 4vw;
+    z-index: 0;
+    bottom: 25vw;
+    left: 34vw;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+#trubka2{
+    position: absolute;
+    width: 4vw;
+    z-index: 0;
+    bottom: 25vw;
+    left: 60vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+#trubka3{
+    position: absolute;
+    width: 4vw;
+    z-index: 0;
+    bottom: 15vw;
+    left: 20vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+#trubka4{
+    position: absolute;
+    width: 4vw;
+    z-index: 0;
+    bottom: 7vw;
+    left: 75vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+#trubka5{
+    position: absolute;
+    width: 4vw;
+    z-index: 0;
+    bottom: 3vw;
+    left: 28vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: visible; 
+}
+.draggable {
+    position: absolute; /* Делаем div с изображением перемещаемым */
+    cursor: grab; /* Показывает, что элемент можно двигать */
+}
+.sixthscreen{
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Экран занимает всю высоту */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow:hidden; 
+}
+.changer5 img{
+    position: absolute;
+    width: 5.5vw;
+    bottom: 1vw;
+    z-index: 4;
+    left: 91vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+}
+.question5 img{
+    position: absolute;
+    width: 7vw;
+    bottom: 1.1vw;
+    z-index: 8;
+    left: 2.5vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+}
+.questionpuzzle img{
+    position: absolute;
+    width: 80vw;
+    bottom: 9.1vw;
+    z-index: 12;
+    left: 10vw;
+    display: none;
+    overflow:visible;
+}
+#board{
+	width: 50vw;
+	height: 50vw;
+	margin-top: 0vw;
+    justify-self: center;
+	justify-content: center;
+	align-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+#board img{
+	width: 33%;
+	height: 33%;
+}
+/* Общие стили для изображений */
+   
+.seventhscreen {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+   
+}
+.changer6 img{
+    position: absolute;
+    width: 5.5vw;
+    bottom: 1vw;
+    z-index: 4;
+    left: 91vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+}
+.question6 img{
+    position: absolute;
+    width: 7vw;
+    bottom: 1.1vw;
+    z-index: 8;
+    left: 2.5vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+}
+.questionlabirint img{
+    position: absolute;
+    width: 80vw;
+    bottom: 9.1vw;
+    z-index: 12;
+    left: 10vw;
+    display: none;
+    overflow:visible;
+}
+canvas { 
+    display: block;  
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor:url("/img/palkasvg.svg") 32 32, auto; /* Курсор для рисования на canvas */
+}
+
+.labirint img {
+    position: absolute;
+    width: 100vw;
+    height: 56vw;
+    bottom: 0.1vw;
+    z-index: 1;
+    left: 0;
+    object-fit: cover;
+}
+.eightscreen {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.changer7 img{
+    position: absolute;
+    width: 5.5vw;
+    bottom: 1vw;
+    z-index: 4;
+    left: 91vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+}
+
+.question7 img{
+    position: absolute;
+    width: 7vw;
+    bottom: 1.1vw;
+    z-index: 8;
+    left: 2.5vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+}
+.questioncosmos img{
+    position: absolute;
+    width: 80vw;
+    bottom: 9.1vw;
+    z-index: 12;
+    left: 10vw;
+    display: none;
+    overflow:visible;
+}
+.greenplanet img{
+    position: absolute;
+    width: 100%;
+    left: 0vw;
+    bottom: 0vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+  
+}
+.redplanet img{
+    position: absolute;
+    width: 90%;
+    left: 0vw;
+    bottom: 12vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+  
+}
+.stars img{
+    position: absolute;
+    width: 90%;
+    left: 6vw;
+    bottom: 7vw;
+    height: 100vh;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+    animation: blink 2s ease-in-out infinite; 
+}
+.targetplanet img{
+    position: absolute;
+    width: 15vw;
+    left: 0vw;
+    bottom: 42vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden; 
+}
+
+.rocket img {
+    position: absolute;
+    width: 14vw;
+    height: auto;
+    bottom: 5vw;  /* Расстояние от нижнего края экрана */
+    left: 70%;    /* Начальная позиция ракеты правее середины */
+    animation: rocketShake 0.1s infinite linear; /* Бесконечная быстрая тряска */
+    transition: left 0.2s linear, bottom 0.2s linear;  /* Плавное движение */
+}
+@keyframes rocketShake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-2px, -2px); }
+    50% { transform: translate(2px, 2px); }
+    75% { transform: translate(-2px, 2px); }
+    100% { transform: translate(2px, -2px); }
+}
+
+
+.controls {
+    position: absolute;
+    bottom: 2vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+
+.row {
+    display: flex;
+    gap: 2vw;
+}
+
+.controls img {
+    width: 6vw;
+    cursor: pointer;
+}
+
+.ninethscreen {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.changer8 img{
+    position: absolute;
+    width: 5.5vw;
+    bottom: 1vw;
+    z-index: 6;
+    left: 91vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+}
+
+.questiondovery img{
+    position: absolute;
+    width: 80vw;
+    bottom: 9.1vw;
+    z-index: 12;
+    left: 10vw;
+    display: none;
+    overflow:visible;
+}
+
+.question8 img{
+    position: absolute;
+    width: 7vw;
+    bottom: 1.1vw;
+    z-index: 8;
+    left: 2.5vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+}
+.fundament img{
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    left: 0vw;
+    bottom: 0vw;  /* Расстояние от нижнего края экрана */
+}
+.lica img{
+    position: absolute;
+    width: 28vw;
+    height: auto;
+    z-index: 0;
+    left: 42vw;
+    bottom: 8vw;  /* Расстояние от нижнего края экрана */
+}
+.sadlica img{
+    position: absolute;
+    width: 28vw;
+    height: auto;
+    z-index: 1;
+    left: 42vw;
+    bottom: 8vw;  /* Расстояние от нижнего края экрана */
+}
+.idgflica img{
+    position: absolute;
+    width: 28vw;
+    height: auto;
+    z-index: 2;
+    left: 42vw;
+    bottom: 8vw;  /* Расстояние от нижнего края экрана */
+}
+.happylica img{
+    position: absolute;
+    width: 28vw;
+    height: auto;
+    z-index: 3;
+    left: 42vw;
+    bottom: 8vw;  /* Расстояние от нижнего края экрана */
+}
+
+.firststar img{
+    position: absolute;
+    width: 28vw;
+    height: auto;
+    z-index: 2;
+    left: 15vw;
+    object-fit: contain;
+    bottom: 38vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+.secondstar img{
+    position: absolute;
+    width: 28vw;
+    height: auto;
+    z-index: 2;
+    left: -2vw;
+    bottom: 35vw;
+    object-fit: contain;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+.thirdstar img{
+    position: absolute;
+    width: 28vw;
+    height: auto;
+    z-index: 2;
+    left: -3vw;
+    object-fit: contain;
+    bottom: 17vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+.fourthstar img{
+    position: absolute;
+    width: 28vw;
+    height: auto;
+    z-index: 2;
+    left: 16vw;
+    bottom: 22vw;  /* Расстояние от нижнего края экрана */
+    object-fit: contain;
+    overflow:visible;
+}
+.fifthstar img{
+    position: absolute;
+    width: 28vw;
+    height: auto;
+    z-index: 2;
+    left: 34vw;
+    bottom: 38vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+    object-fit: cover;
+}
+.sixthstar img{
+    position: absolute;
+    width: 28vw;
+    height: auto;
+    z-index: 2;
+    left: 35vw;
+    object-fit: contain;
+    bottom: 22vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+.seventhstar img{
+    position: absolute;
+    width: 28vw;
+    height: auto;
+    z-index: 2;
+    left: 53vw;
+    object-fit: contain;
+    bottom: 22vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+.eightstar img{
+    position: absolute;
+    width: 28vw;
+    height: auto;
+    z-index: 2;
+    left: 53vw;
+    object-fit: contain;
+    bottom: 38vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+.ninethstar img{
+    position: absolute;
+    width: 28vw;
+    height: auto;
+    z-index: 2;
+    left: 72vw;
+    object-fit: cover;
+    bottom: 38vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+.tenthstar img{
+    position: absolute;
+    width: 28vw;
+    height: auto;
+    z-index: 2;
+    left: 72vw;
+    object-fit: contain;
+    bottom: 22vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }  /* Обычный размер */
+    50% { transform: scale(1.3); } /* Увеличение на 30% */
+    100% { transform: scale(1); } /* Возвращение к обычному размеру */
+}
+
+/* Применяем анимацию ко всем звёздам */
+.firststar img,
+.secondstar img,
+.thirdstar img,
+.fourthstar img,
+.fifthstar img,
+.sixthstar img,
+.seventhstar img,
+.eightstar img,
+.ninethstar img,
+.tenthstar img {
+    animation: pulse 3s ease-in-out infinite; /* Плавное увеличение и уменьшение */
+}
+
+
+.clearshkala img{
+    position: absolute;
+    width: 5vw;
+    height: auto;
+    z-index: 2;
+    left: 94vw;
+    object-fit: contain;
+    bottom: 7vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+.redshkala img{
+    position: absolute;
+    width: 5vw;
+    height: auto;
+    z-index: 3;
+    left: 94vw;
+    object-fit: contain;
+    bottom: 7vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+.orangeshkala img{
+    position: absolute;
+    width: 5vw;
+    height: auto;
+    z-index: 3;
+    left: 94vw;
+    object-fit: contain;
+    bottom: 7vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+.greenshkala img{
+    position: absolute;
+    width: 5vw;
+    height: auto;
+    z-index: 3;
+    left: 94vw;
+    object-fit: contain;
+    bottom: 7vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+
+.tenthscreen {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow:hidden;
+}
+.changer9 img{
+    position: absolute;
+    width: 5.5vw;
+    bottom: 1vw;
+    z-index: 6;
+    left: 91vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+}
+
+.question9 img{
+    position: absolute;
+    width: 7vw;
+    bottom: 1.1vw;
+    z-index: 8;
+    left: 2.5vw;
+    height: auto;
+    object-fit: cover;  /* Сохраняет пропорции изображения и заполняет контейнер */
+    overflow: hidden;
+}
+.questionpoliv img{
+    position: absolute;
+    width: 80vw;
+    bottom: 9.1vw;
+    z-index: 12;
+    left: 10vw;
+    display: none;
+    overflow:visible;
+}
+
+.moon img{
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    z-index: 4;
+    left: 0vw;
+    object-fit:fill;
+    bottom: 0vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+.sparklystars img{
+    position: absolute;
+    width: 59vw;
+    height: auto;
+    z-index: 4;
+    left: 20vw;
+    object-fit:fill;
+    bottom: 20vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+.sparklystars img { /* Добавили sparklystars */
+    animation: pulse1 3s ease-in-out infinite; /* Плавное увеличение и уменьшение */
+}
+@keyframes pulse1 {
+    0% { transform: scale(1); }  /* Обычный размер */
+    50% { transform: scale(0.9); } /* Увеличение на 30% */
+    100% { transform: scale(1); } /* Возвращение к обычному размеру */
+}
+.buttonwithsaving img{
+    position: absolute;
+    width: 12vw;
+    height: auto;
+    z-index: 4;
+    left: 2vw;
+    object-fit:fill;
+    bottom: 45vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+.buttonwithwatering img{
+    position: absolute;
+    width: 12vw;
+    height: auto;
+    z-index: 4;
+    left: 86vw;
+    object-fit:fill;
+    bottom: 45vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+.sprout img{
+    position: absolute;
+    width: 12vw;
+    height: auto;
+    z-index: 6;
+    left: 43vw;
+    object-fit:fill;
+    bottom: 9vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+.midflower img{
+    position: absolute;
+    width: 12vw;
+    height: auto;
+    z-index: 6;
+    left: 43vw;
+    object-fit:fill;
+    bottom: 14vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+.midflowersecond img{
+    position: absolute;
+    width: 19vw;
+    height: auto;
+    z-index: 6;
+    left: 39vw;
+    object-fit:fill;
+    bottom: 14vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+.grownflower img{
+    position: absolute;
+    width: 29vw;
+    height: auto;
+    z-index: 6;
+    left: 35vw;
+    object-fit:fill;
+    bottom: 14vw;  /* Расстояние от нижнего края экрана */
+    overflow:visible;
+}
+
+.rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    display: none;
+    z-index: 5;
+}
+
+.rain div {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background: rgba(173, 216, 230, 0.7);
+    opacity: 0.7;
+    animation: rain-fall 0.7s linear infinite;
+}
+
+@keyframes rain-fall {
+    0% { transform: translateY(-100vh); }
+    100% { transform: translateY(100vh); }
+}
+
+.glass-cover {
+        position: absolute;
+        width: 29vw;
+        height: 40vw;
+        left: 35vw;
+        bottom: 12vw;
+        background: rgba(255, 255, 255, 0.15); /* Прозрачное стекло */
+        border-radius: 50% 50% 0 0; /* Закругленный верх, острые углы снизу */
+        border: 3px solid rgba(255, 255, 255, 0.3); /* Контур стекла */
+        box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3); /* Легкое свечение */
+        backdrop-filter: blur(5px); /* Эффект стекла */
+        display: none;
+        z-index: 7;
+}
+
